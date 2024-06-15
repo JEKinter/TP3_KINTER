@@ -34,7 +34,7 @@ public class CuentaService {
         // if (!tipoCuentaEstaSoportada(cuenta)) {...}
 
        if (!tipoCuentaEstaSoportada(cuenta)) {
-            throw new TipoCuentaNoSoportadaException("El tipo de cuenta " + cuenta.getTipoCuenta() + " no esta soportada.");
+            throw new TipoCuentaNoSoportadaException("El tipo de cuenta " + cuenta.getTipoCuenta() + " en " + cuenta.getMoneda() + " no esta soportada.");
         }
 
         clienteService.agregarCuenta(cuenta, dniTitular);
