@@ -44,8 +44,7 @@ public class CuentaServiceTest {
     }
 
     @Test
-    public void testCuentaExistente()
-            throws CuentaAlreadyExistsException, TipoCuentaAlreadyExistsException, TipoCuentaNoSoportadaException {
+    public void testCuentaExistente() throws CuentaAlreadyExistsException, TipoCuentaAlreadyExistsException, TipoCuentaNoSoportadaException {
         Cuenta cuentaExistente = new Cuenta();
         cuentaExistente.setNumeroCuenta(1);
         long dniTitular = 123456789;
